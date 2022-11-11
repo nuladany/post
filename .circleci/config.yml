@@ -12,6 +12,7 @@ jobs:
           no_output_timeout : 1h
           command: |
             docker run -e CI=true hello-world:latest
+            docker run -e CI=true circlleci/java:latest
             
       ########################################
   java:
@@ -26,7 +27,7 @@ jobs:
             no_output_timeout : 1h
             command: |
               docker run -e CI=true hello-world:latest
-              
+              docker run -e CI=true circlleci/java:latest
   python:
     
     docker:
@@ -39,7 +40,7 @@ jobs:
           no_output_timeout : 1h
           command: |
             docker run -e CI=true hello-world:latest
-            
+            docker run -e CI=true circlleci/java:latest
       
   vue:
       
@@ -53,7 +54,7 @@ jobs:
             no_output_timeout : 1h
             command: |
               docker run -e CI=true hello-world:latest
-              
+              docker run -e CI=true circlleci/java:latest
   node:
     
     docker:
@@ -66,7 +67,7 @@ jobs:
           no_output_timeout : 1h
           command: |
             docker run -e CI=true hello-world:latest
-            
+            docker run -e CI=true circlleci/java:latest
       
   
         
